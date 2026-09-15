@@ -6,7 +6,10 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "fastapi[standard]>=0.141.1",
+    "joblib>=1.6.0",
+    "matplotlib>=3.11.2",
     "pandas>=3.0.5",
+    "scikit-learn>=1.9.1",
 ]
 
 [dependency-groups]
