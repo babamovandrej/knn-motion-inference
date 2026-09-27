@@ -67,7 +67,7 @@ def _add_titles(
         x=0.01,
         ha="left",
         fontsize=13,
-        fontweight="semibold",
+        fontweight="bold",
         color=TEXT_PRIMARY,
     )
     figure.text(
@@ -153,7 +153,7 @@ def plot_confusion_matrix(
                 ha="center",
                 va="center",
                 fontsize=10,
-                fontweight="semibold",
+                fontweight="bold",
                 color=ink,
             )
             ax.text(
@@ -343,9 +343,9 @@ def plot_cv_neighbours(
         xy=(k[chosen], mean[chosen]),
         xytext=(0, 14),
         textcoords="offset points",
-        ha="center",
+        ha="right" if chosen == len(k) - 1 else "center",
         fontsize=8.5,
-        fontweight="semibold",
+        fontweight="bold",
         color=TEXT_PRIMARY,
     )
 

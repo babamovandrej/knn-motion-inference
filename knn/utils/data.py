@@ -42,7 +42,7 @@ def load_groups(
     split: Split,
     data_dir: Path = DATA_DIR,
 ) -> "pd.Series[int] | None":
-    path = data_dir / split / f"subject_{split}.csv"
+    path = data_dir / split / f"subjects_{split}.csv"
 
     if not path.exists():
         return None

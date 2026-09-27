@@ -1,0 +1,12 @@
+.git
+.github
+.venv
+.vscode
+.mypy_cache
+.pytest_cache
+.ruff_cache
+**/__pycache__
+knn/model/*.joblib
+knn/reports
+tests
+request.json
